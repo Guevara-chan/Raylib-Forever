@@ -6,3 +6,7 @@ Developed in pure frustration it was designed to counterweight other **4** attem
 * Uses sheer power of your browser (and thought) to deliver includes for latest exsiting version.
 * Faithful code conversion: enums to enums, all naming conventions staying as-is.
 * Only known Nim binding to wrap [raygui](https://github.com/raysan5/raygui) (linked against pre-compiled [lib](https://github.com/Guevara-chan/Raylib-Forever/releases/tag/aux)
+
+# :.Compatibility.:
+__Raylib Forever__ was best tested with *Chrome 80* and [Electron](https://electronjs.org/), which is used to develop it.  
+It should work on any non-mechanical teapot, though.
