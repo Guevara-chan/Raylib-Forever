@@ -7,14 +7,14 @@ InitWindow 800, 600, "RayLib/[nim]"
 60.SetTargetFPS
 
 # Camera setup.
-var camera = Camera(position: Vector3(z: -15.0f, y: 10), up: Vector3(y: 0.5), fovy: 45.0)
+var camera = Camera position: Vector3(z: -15.0f, y: 10), up: Vector3(y: 0.5), fovy: 45.0
 camera.SetCameraMode CAMERA_ORBITAL
 
 # ==Main code==
 while not WindowShouldClose():
     camera.UpdateCamera
     BeginDrawing()
-    GuiLabel(Rectangle(x: 10, y: 0, width: 100, height: 25), "by V.A. Guevara")
+    GuiLabel Rectangle(x: 10, y: 0, width: 100, height: 25), "by V.A. Guevara"
     BLACK.ClearBackground
     BeginMode3D(camera)
     DrawGrid 10, 1.0f
