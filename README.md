@@ -5,7 +5,7 @@ Developed in pure frustration it was designed to counterweight other **4** attem
 # :.Featuræ.:
 * Uses sheer power of your browser (and thought) to deliver includes for latest exsiting version.
 * Faithful code conversion: enums to enums, all naming conventions staying as-is.
-* Only known Nim binding to wrap [raygui](https://github.com/raysan5/raygui) (linked against pre-compiled [lib](https://github.com/Guevara-chan/Raylib-Forever/releases/tag/aux)
+* Only known Nim binding to wrap [raygui](https://github.com/raysan5/raygui) (linked against pre-compiled [lib](https://github.com/Guevara-chan/Raylib-Forever/releases/tag/aux))
 * Standalone converter [script](https://gist.github.com/Guevara-chan/2d10691e0146aae4c96ff534978529f8) in [CoffeeScript 2](http://coffeescript.org/), usable under [Node.js](https://nodejs.org/).
 
 # :.Compatibility.:
