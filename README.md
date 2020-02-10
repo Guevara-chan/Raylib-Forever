@@ -9,7 +9,7 @@ Developed in pure frustration it was designed to counterweight other **4** attem
 
 # :.Compatibility.:
 __Raylib Forever__ was best tested with *Chrome 80* and [Electron](https://electronjs.org/), which is used to develop it.  
-It should work on any non-mechanical teapot, though.
+It should work on any non-mechanical teapot that allows `fetch`, though.
 
 # :.Brief samples of raylib+nim union.:
 ![image](https://user-images.githubusercontent.com/8768470/74151688-c3258500-4c1d-11ea-8a50-f37dc0db4ada.png)
