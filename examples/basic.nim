@@ -7,7 +7,7 @@ InitWindow 800, 600, "RayLib/[nim]"
 60.SetTargetFPS
 
 # Camera setup.
-var camera = Camera position: Vector3(z: -15.0f, y: 10), up: Vector3(y: 0.5), fovy: 45.0
+var camera = Camera(position: Vector3(z: -15.0f, y: 10), up: Vector3(y: 0.5), fovy: 45.0)
 camera.SetCameraMode CAMERA_ORBITAL
 
 # ==Main code==
