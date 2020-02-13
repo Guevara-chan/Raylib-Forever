@@ -2,7 +2,7 @@
 # Raylib Forever basic usage sample
 # Developed in 2*20 by Guevara-chan
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- #
-import lenientops, raylib, raygui, rlgl
+import lenientops, raylib, raygui
 InitWindow 800, 600, "RayLib/[nim]"
 60.SetTargetFPS
 
@@ -18,11 +18,8 @@ while not WindowShouldClose():
     GuiLabel Rectangle(x: 10, y: 0, width: 100, height: 25), "by V.A. Guevara"
     BLACK.ClearBackground
     BeginMode3D(camera)
-    rlMatrixMode(RL_PROJECTION)
-    rlPushMatrix()
     DrawGrid 10, 1.0f
     DrawSphere Vector3(), 0.5f, RED
-    rlPopMatrix()
     EndMode3D()
     let 
         (slogan, size) = ("/Hello from Nim/", 20)
