@@ -35,7 +35,7 @@ var
     drawRingLines = false
     drawCircleLines = false
 
-SetTargetFPS(60)                #  Set our game to run at 60 frames-per-second
+60.SetTargetFPS                 #  Set our game to run at 60 frames-per-second
 # --------------------------------------------------------------------------------------
 
 #  Main game loop
