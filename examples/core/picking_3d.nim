@@ -52,8 +52,10 @@ while not WindowShouldClose():      #  Detect window close button or ESC key
 
             #  Check collision between ray and box
             collision = CheckCollisionRayBox(ray,
-                        BoundingBox(min: Vector3(x: cubePosition.x - cubeSize.x/2, y: cubePosition.y - cubeSize.y/2, z: cubePosition.z - cubeSize.z/2),
-                                    max: Vector3(x: cubePosition.x + cubeSize.x/2, y: cubePosition.y + cubeSize.y/2, z: cubePosition.z + cubeSize.z/2)))
+                        BoundingBox(min: Vector3(x: cubePosition.x - cubeSize.x/2, y: cubePosition.y - cubeSize.y/2, 
+                                        z: cubePosition.z - cubeSize.z/2),
+                                    max: Vector3(x: cubePosition.x + cubeSize.x/2, y: cubePosition.y + cubeSize.y/2,
+                                        z: cubePosition.z + cubeSize.z/2)))
         else: collision = false
     # ----------------------------------------------------------------------------------
 
@@ -81,7 +83,8 @@ while not WindowShouldClose():      #  Detect window close button or ESC key
 
     DrawText("Try selecting the box with mouse!", 240, 10, 20, DARKGRAY)
 
-    if collision: DrawText("BOX SELECTED", (screenWidth - MeasureText("BOX SELECTED", 30)) div 2, (screenHeight * 0.1f).int, 30, GREEN)
+    if collision: DrawText("BOX SELECTED", (screenWidth - MeasureText("BOX SELECTED", 30)) div 2, 
+        (screenHeight * 0.1f).int, 30, GREEN)
 
     DrawFPS(10, 10)
 
