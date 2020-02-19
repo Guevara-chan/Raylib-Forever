@@ -10,7 +10,7 @@
 #
 #*******************************************************************************************
 
-include raylib, sequtils, lenientops
+include raylib
 
 const MAX_INPUT_CHARS = 9
 
