@@ -10,7 +10,7 @@ Developed in pure frustration it was designed to counterweight other **4** attem
 * [rlgl](https://github.com/raysan5/raylib/blob/master/src/rlgl.h) module support as shared [library](https://github.com/Guevara-chan/Raylib-Forever/releases/tag/aux).
 
 # :.Compatibility.:
-__Raylib Forever__ was best tested with *Chrome 80* and [Electron](https://electronjs.org/), which is used to develop it.  
+__Raylib Forever__ online was best tested with *Chrome 80* and [Electron](https://electronjs.org/), which is used to develop it.  
 It should work on any non-mechanical teapot that provides `fetch` and ES2019, though.
 
 # :.Brief samples of raylib+nim union.:
