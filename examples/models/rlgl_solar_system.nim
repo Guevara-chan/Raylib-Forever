@@ -26,14 +26,14 @@ proc DrawSphereBasic(color: Color) #  Draw sphere without any matrix transformat
 #  Initialization
 # --------------------------------------------------------------------------------------
 const 
-    screenWidth = 800
-    screenHeight = 450
+    screenWidth      = 800
+    screenHeight     = 450
 
-    sunRadius = 4.0f
-    earthRadius = 0.6f
+    sunRadius        = 4.0f
+    earthRadius      = 0.6f
     earthOrbitRadius = 8.0f
-    moonRadius = 0.16f
-    moonOrbitRadius = 1.5f
+    moonRadius       = 0.16f
+    moonOrbitRadius  = 1.5f
 
 InitWindow screenWidth, screenHeight, "raylib [models] example - rlgl module usage with push/pop matrix transformations"
 
