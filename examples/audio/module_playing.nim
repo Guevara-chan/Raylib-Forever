@@ -6,6 +6,7 @@
 #   raylib is licensed under an unmodified zlib/libpng license (View raylib.h for details)
 #
 #   Copyright (c) 2016 Ramon Santamaria (@raysan5)
+#   /Converted in 2*20 by Guevara-chan.
 #
 #*******************************************************************************************
 
