@@ -12,8 +12,7 @@
 #
 #*******************************************************************************************
 
-proc c_free(p: pointer) {.importc:"free", header: "<stdlib.h>".}
-import raylib
+import raylib, system/[ansi_c]
 
 const NUM_PROCESSES = 8
 
@@ -93,7 +92,6 @@ while not WindowShouldClose():    #  Detect window close button or ESC key
 
         let pixels = GetImageData(image) #  Get pixel data from image (RGBA 32bit)
         UpdateTexture texture, pixels    #  Update texture with new image data
-        #echo pixels
         pixels.c_free                    #  Unload pixels data from RAM
 
         textureReload = false
