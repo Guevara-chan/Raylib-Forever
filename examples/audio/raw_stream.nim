@@ -59,7 +59,6 @@ var position = Vector2()
 
 #  Main game loop
 while not WindowShouldClose():  #  Detect window close button or ESC key
-
     #  Update
     # ----------------------------------------------------------------------------------
 
@@ -100,6 +99,7 @@ while not WindowShouldClose():  #  Detect window close button or ESC key
             if writeLength > readLength: writeLength = readLength
 
             #  Write the slice
+            echo writeCursor
             copyMem cast[pointer](cast[int](writeBuf.addr)+writeCursor), cast[pointer](cast[int](data.addr)+readCursor),
                  writeLength*sizeof(uint16)
 
