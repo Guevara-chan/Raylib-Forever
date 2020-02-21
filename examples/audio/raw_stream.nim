@@ -41,16 +41,16 @@ PlayAudioStream stream         #  Start processing stream buffer (no data loaded
 var mousePosition = Vector2(x: -100.0f, y: -100.0f)
 
 #  Cycles per second (hz)
-var frequency = 440.0f;
+var frequency = 440.0f
 
 #  Previous value, used to test if sine needs to be rewritten, and to smoothly modulate frequency
-var oldFrequency = 1.0f;
+var oldFrequency = 1.0f
 
 #  Cursor to read and copy the samples of the sine wave buffer
-var readCursor = 0;
+var readCursor = 0
 
 #  Computed size in samples of the sine wave
-var waveLength = 1;
+var waveLength = 1
 
 var position = Vector2()
 
