@@ -44,7 +44,7 @@ SetTargetFPS(60);                   #  Set our game to run at 60 frames-per-seco
 while not WindowShouldClose():      #  Detect window close button or ESC key
     #  Update
     # ----------------------------------------------------------------------------------
-    UpdateCamera(camera)            #  Update camera
+    camera.addr.UpdateCamera        #  Update camera
 
     if MOUSE_LEFT_BUTTON.IsMouseButtonPressed():
         if not collision:

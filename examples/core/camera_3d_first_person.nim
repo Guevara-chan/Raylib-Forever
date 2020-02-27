@@ -49,7 +49,7 @@ SetTargetFPS 60                             #  Set our game to run at 60 frames-
 while not WindowShouldClose():              #  Detect window close button or ESC key
     #  Update
     # ----------------------------------------------------------------------------------
-    camera.UpdateCamera                     #  Update camera
+    camera.addr.UpdateCamera                #  Update camera
     # ----------------------------------------------------------------------------------
 
     #  Draw

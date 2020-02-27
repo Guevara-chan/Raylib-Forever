@@ -62,7 +62,7 @@ var
 while not WindowShouldClose():    #  Detect window close button or ESC key
     #  Update
     # ----------------------------------------------------------------------------------
-    camera.UpdateCamera
+    camera.addr.UpdateCamera
 
     earthRotation += (5.0f*rotationSpeed)
     earthOrbitRotation += (365/360.0f*(5.0f*rotationSpeed)*rotationSpeed)
