@@ -13,7 +13,7 @@ camera.SetCameraMode CAMERA_ORBITAL
 
 # ==Main code==
 while not WindowShouldClose():
-    camera.UpdateCamera
+    camera.addr.UpdateCamera
     BeginDrawing()
     GuiLabel Rectangle(x: 10, y: 0, width: 100, height: 25), "by V.A. Guevara"
     BLACK.ClearBackground
