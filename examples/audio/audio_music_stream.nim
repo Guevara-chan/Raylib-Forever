@@ -1,13 +1,11 @@
 #*******************************************************************************************
 #
-#   raylib [audio] example - Multichannel sound playing
+#   raylib [audio] example - Music playing (streaming)
 #
-#   This example has been created using raylib 2.6 (www.raylib.com)
+#   This example has been created using raylib 1.3 (www.raylib.com)
 #   raylib is licensed under an unmodified zlib/libpng license (View raylib.h for details)
 #
-#   Example contributed by Chris Camacho (@codifies) and reviewed by Ramon Santamaria (@raysan5)
-#
-#   Copyright (c) 2019 Chris Camacho (@codifies) and Ramon Santamaria (@raysan5)
+#   Copyright (c) 2015 Ramon Santamaria (@raysan5)
 #   /Converted in 2*20 by Guevara-chan.
 #
 #*******************************************************************************************
