@@ -21,7 +21,7 @@ InitWindow screenWidth, screenHeight, "raylib [audio] example - music playing (s
 
 InitAudioDevice()      #  Initialize audio device
 
-let music = LoadMusicStream("./resources/guitar_noodling.ogg")         #  Load WAV audio file
+let music = LoadMusicStream("resources/guitar_noodling.ogg")         #  Load WAV audio file
 
 PlayMusicStream(music)
 
