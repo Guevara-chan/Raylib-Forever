@@ -17,18 +17,21 @@ import raylib
 const screenWidth = 800
 const screenHeight = 450
 
-InitWindow screenWidth, screenHeight, "raylib [audio] example - Multichannel sound playing"
+InitWindow screenWidth, screenHeight, "raylib [audio] example - music playing (streaming)"
 
 InitAudioDevice()      #  Initialize audio device
 
 let music = LoadMusicStream("./resources/guitar_noodling.ogg")         #  Load WAV audio file
+
 PlayMusicStream(music)
+
+var
+    timePlayed = 0.0
+    pause = false
 
 60.SetTargetFPS        #  Set our game to run at 60 frames-per-second
 # --------------------------------------------------------------------------------------
 
-var timePlayed = 0.0
-var pause = false
 #  Main game loop
 while not WindowShouldClose():  #  Detect window close button or ESC key
     #  Update
