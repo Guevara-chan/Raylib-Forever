@@ -37,36 +37,37 @@ while not WindowShouldClose():  #  Detect window close button or ESC key
     #  Update
     # ----------------------------------------------------------------------------------
     music.UpdateMusicStream()
+
     if KEY_SPACE.IsKeyPressed():
         music.StopMusicStream()
         music.PlayMusicStream()
+
     if KEY_P.IsKeyPressed():
         pause = not pause
-        if pause:
-            music.PauseMusicStream()
-        else:
-            music.ResumeMusicStream()
+        if pause: music.PauseMusicStream()
+        else: music.ResumeMusicStream()
         
     timePlayed = music.GetMusicTimePlayed()/music.GetMusicTimeLength()*400
+
     if timePlayed > 400: music.StopMusicStream()
     # ----------------------------------------------------------------------------------
 
     #  Draw
     # ----------------------------------------------------------------------------------
-    BeginDrawing();
+    BeginDrawing()
 
-    ClearBackground(RAYWHITE);
+    ClearBackground(RAYWHITE)
 
-    DrawText("MUSIC SHOULD BE PLAYING!", 255, 150, 20, LIGHTGRAY);
+    DrawText("MUSIC SHOULD BE PLAYING!", 255, 150, 20, LIGHTGRAY)
 
-    DrawRectangle(200, 200, 400, 12, LIGHTGRAY);
-    DrawRectangle(200, 200, (int)timePlayed, 12, MAROON);
-    DrawRectangleLines(200, 200, 400, 12, GRAY);
+    DrawRectangle(200, 200, 400, 12, LIGHTGRAY)
+    DrawRectangle(200, 200, (int)timePlayed, 12, MAROON)
+    DrawRectangleLines(200, 200, 400, 12, GRAY)
 
-    DrawText("PRESS SPACE TO RESTART MUSIC", 215, 250, 20, LIGHTGRAY);
-    DrawText("PRESS P TO PAUSE/RESUME MUSIC", 208, 280, 20, LIGHTGRAY);
+    DrawText("PRESS SPACE TO RESTART MUSIC", 215, 250, 20, LIGHTGRAY)
+    DrawText("PRESS P TO PAUSE/RESUME MUSIC", 208, 280, 20, LIGHTGRAY)
 
-    EndDrawing();
+    EndDrawing()
     # ----------------------------------------------------------------------------------
 
 #  De-Initialization
