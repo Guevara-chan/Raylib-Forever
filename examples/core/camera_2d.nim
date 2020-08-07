@@ -52,7 +52,7 @@ while not WindowShouldClose():
     if IsKeyDown(KEY_RIGHT):  player.x += 2
     elif IsKeyDown(KEY_LEFT): player.x -= 2
     # Camera target follows player
-    camera.target = Vector2(x: player.x + 20,y: player.y + 20)
+    camera.target = Vector2(x: player.x + 20, y: player.y + 20)
     # Camera rotation controls
     if IsKeyDown(KEY_A):   camera.rotation -= 1
     elif IsKeyDown(KEY_S): camera.rotation += 1
