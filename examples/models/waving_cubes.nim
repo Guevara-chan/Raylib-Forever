@@ -79,7 +79,7 @@ while not WindowShouldClose():    #  Detect window close button or ESC key
                         z: (z - numBlocks/2)*(scale*3.0f) + scatter)
 
                     #  Pick a color with a hue depending on cube position for the rainbow color effect
-                    cubeColor = ColorFromHSV Vector3(x: (((x + y + z)*18)%%360)/1.0, y: 0.75f, z: 0.9f)
+                    cubeColor = ColorFromHSV((((x + y + z)*18)%%360)/1.0, 0.75f, 0.9f)
 
                     #  Calculate cube size
                     cubeSize = (2.4f - scale)*blockScale;
